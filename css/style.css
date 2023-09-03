@@ -29,7 +29,7 @@ header img {
 }
 
 .search {
-  background: #f0f1f3;
+/*   background: #f0f1f3; */
   border-radius: 20px;
   padding: 8px;
   width: 100px;
@@ -52,14 +52,14 @@ nav,
 }
 
 nav {
-  background: #0e0e0c;
+  background-color: #0e0e0c;
   position: absolute;
   bottom: 0px;
   margin-bottom: 64px;
 }
 
 nav a:hover {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 nav a {
@@ -72,16 +72,26 @@ nav a {
 }
 
 .museumoutside {
-  display: block;
+/*   display: block; */
   max-height: 80px;
 }
 
-.pictures {
-  display: block;
+figure {
+  border: thin #f0f1f3 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-  width: 82%;
 }
+
+figcaption {
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 .buttons {
   display: block;
@@ -93,33 +103,78 @@ nav a {
 .exbitions-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   gap: 12px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .dinobox {
   display: block;
   justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
   padding: 0;
   max-width: 280px;
   border-radius: 30px;
   background-color: #141e2d;
 }
+
 .spacebox {
   display: block;
   justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
   padding: 0;
   max-width: 280px;
   border-radius: 30px;
   background-color: #571a0d;
 }
+
+.newscontainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+/*   align-items: center; */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.on{
+  text-align: center;
+}
+
+.one > img {
+  max-width: 550px;
+}
+
+.two{
+  background-color: #571a0d;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.two > h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  max-width: 550px;
+}
+
+.twoblue{
+  background-color: #141e2d;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.twoblue > h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  max-width: 550px;
+}
+
+.ingress{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* Footer design */
 footer {
   display: none;
@@ -171,6 +226,11 @@ a {
     margin: 20px;
   }
 
+  /* main{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+   */
   footer {
     display: block;
     margin-top: auto;
