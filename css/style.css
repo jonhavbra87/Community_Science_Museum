@@ -286,41 +286,45 @@ figcaption {
   display: block;
   justify-self: center;
   align-self: center;
-  text-align: justify;
+  text-align: center;
   font-size: large;
   background-color: #141e2d;
   color: #f0f1f3;
   border-radius: 20px;
+  width: 100%;
 }
 .accessibility {
   display: block;
   justify-self: center;
   align-self: center;
-  text-align: justify;
+  text-align: center;
   font-size: large;
   background-color: #571a0d;
   color: #f0f1f3;
   border-radius: 20px;
+  width: 100%;
 }
 .café {
   display: block;
   justify-self: center;
   align-self: center;
-  text-align: justify;
+  text-align: center;
   font-size: large;
   background-color: #f0f1f3;
   color: #0e0e0c;
   border-radius: 20px;
+  width: 100%;
 }
 .shop {
   display: block;
   justify-self: center;
   align-self: center;
-  text-align: justify;
+  text-align: center;
   font-size: large;
   background-color: #d9a726;
   color: #0e0e0c;
   border-radius: 20px;
+  width: 100%;
 }
 
 /* Footer design */
@@ -341,7 +345,7 @@ a {
 }
 
 /* Desktop*/
-@media (min-width: 35em) {
+@media (min-width: 50em) {
   body {
     margin-bottom: 0px;
   }
