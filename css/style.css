@@ -29,15 +29,12 @@ h2 {
 .uppercase {
   text-transform: uppercase;
 }
-p {
-  text-transform: capitalize;
-}
+
 /* Header design */
 .header {
   bottom: 0;
   position: fixed;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
@@ -92,33 +89,124 @@ nav a {
   font-size: 1.2rem;
 }
 
-/* Main picture */
-figure {
+.global-container {
   display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
 }
 
-figcaption {
-  padding: 3px;
+/* INDEX PAGE */
+.indexmoon {
+  display: block;
+  justify-content: center;
+  max-width: 100%;
+}
+.teacher {
+  display: block;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-weight: 500;
+}
+.teacher img {
+  width: 100%;
+  border-radius: 30px;
+}
+.teacher p {
+  background: linear-gradient(180deg, #571a0d, #0e0e0c);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.guidedtour {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.guidedtour img {
+  width: 100%;
+  border-radius: 30px;
+}
+.guidedtour p {
+  background: linear-gradient(180deg, #571a0d, #0e0e0c);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.researchers {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.researchers img {
+  width: 100%;
+  border-radius: 30px;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-.buttons {
-  display: block;
-  text-align: center;
+.researchers p {
+  background: linear-gradient(180deg, #571a0d, #0e0e0c);
   padding: 10px;
-  font-size: x-large;
-  color: #f0f1f3;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.spacesuite {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.spacesuite img {
+  width: 100%;
+  border-radius: 30px;
+}
+.spacesuite p {
+  background: linear-gradient(180deg, #571a0d, #0e0e0c);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.indextext {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(30deg, #141e2d, #0e0e0c, #214a2a);
+  border-radius: 20px;
+}
+
+.readingkid {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.readingkid img {
+  width: 100%;
+  border-radius: 30px;
+}
+.readingkid p {
+  background: linear-gradient(180deg, #571a0d, #0e0e0c);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Images */
 .pictures {
@@ -130,7 +218,7 @@ figcaption {
 }
 
 /* Exhibitions GRIDS */
-.exbitions-container {
+.exhibitions-container {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -139,7 +227,6 @@ figcaption {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .dinobox {
   display: block;
   justify-content: center;
@@ -147,7 +234,7 @@ figcaption {
   padding: 0;
   max-width: 280px;
   border-radius: 30px;
-  background-color: #141e2d;
+  background: linear-gradient(0.3turn, #141e2d, #0e0e0c, #141e2d);
 }
 
 .spacebox {
@@ -157,7 +244,7 @@ figcaption {
   padding: 0;
   max-width: 280px;
   border-radius: 30px;
-  background-color: #571a0d;
+  background: linear-gradient(0.3turn, #0e0e0c, #571a0d, #0e0e0c);
 }
 
 /* News GRIDS */
@@ -345,11 +432,15 @@ a {
 }
 
 /* Desktop*/
-@media (min-width: 50em) {
+@media (min-width: 40em) {
   body {
     margin-bottom: 0px;
   }
-
+  main {
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom: 50px;
+  }
   h1 {
     font-size: 4.3rem;
   }
@@ -384,22 +475,121 @@ a {
     text-decoration: underline;
   }
 
+  .logo {
+    display: block;
+  }
+
   .search {
     border-radius: 20px;
     padding: 8px;
     width: 200px;
     margin: 20px;
   }
-  figcaption {
-    font-size: 3rem;
-  }
-  .news-container {
+
+  .global-container {
+    display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
   }
 
+  /* INDEX PAGE */
+  .indexpicture {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+
+  .indexpicture {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+  }
+  .indexpicture > img {
+    max-width: 100%;
+  }
+
+  .indexh2 {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    justify-self: center;
+    align-self: end;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+  }
+
+  .indexmoon {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+  }
+  .indexmoon > img {
+    max-width: 100%;
+  }
+
+  .teacher {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+  .teacher > img {
+    max-height: 100%;
+  }
+
+  .guidedtour {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+  .guidedtour > img {
+    max-width: 100%;
+  }
+
+  .researchers {
+    display: grid;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+  }
+  .researchers > img {
+    max-height: 100%;
+  }
+  .spacesuite {
+    display: grid;
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+  .spacesuite > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .indextext {
+    display: grid;
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    padding: 0;
+    text: center;
+  }
+
+  .readingkid {
+    display: grid;
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+  }
+  .readingkid > img {
+    max-width: 100%;
+  }
+
+  /* EXHIBITION PAGE */
+
+  /* NEWS PAGE */
   .one {
     max-width: 550px;
   }
@@ -446,6 +636,7 @@ a {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 4;
+    align-self: start;
     font-size: x-large;
     z-index: 2;
     background-color: #0e0e0c;
