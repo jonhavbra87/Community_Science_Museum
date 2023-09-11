@@ -47,7 +47,7 @@ h3 {
 }
 
 header img {
-  max-width: 50px;
+  max-width: 70px;
 }
 
 .search {
@@ -110,13 +110,6 @@ nav a {
 }
 
 /* INDEX PAGE */
-.mainpicture {
-  margin: 0 auto; /* Center the container horizontally */
-}
-.mainpicture img {
-  width: 95%;
-  border-radius: 20px;
-}
 
 .indeximg {
   display: block;
@@ -125,9 +118,10 @@ nav a {
   text-transform: uppercase;
   font-weight: 500;
   margin: 0 auto; /* Center the container horizontally */
+  margin-top: 2rem;
 }
 .indeximg img {
-  width: 90%;
+  width: 100%;
   border-radius: 20px;
 }
 .indeximg p {
@@ -155,46 +149,107 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  margin: 0 auto;
   background-color: #214a2a;
   border-radius: 20px;
   padding: 20px;
-  width: 80%;
+  width: 100%;
 }
+
+.visit.booking {
+  border-radius: 10px;
+  border: 2px solid #0e0e0c;
+  background-color: #a9b7ac;
+  color: #0e0e0c;
+}
+
 .form__input {
   display: block;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
+input[type="date"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #0e0e0c;
-  border-radius: 4px;
-  font-size: 16px;
+  width: 90%;
+  border: 2px solid #0e0e0c;
+  /* border-radius: 20px; */
+  font-size: 1rem;
 }
 
 button {
   border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #a9b7ac;
+}
+
+select {
+  appearance: none; /* Remove default appearance */
+  padding: 10px;
+  border: 1px solid #0e0e0c;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f0f1f3;
+  color: #0e0e0c;
+}
+
+select:hover {
+  background-color: #a9b7ac;
+}
+select::after {
+  content: "\25BC"; /* Unicode character for a downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 /* EXHIBITIONS PAGE */
-.box.dino {
+.largebox {
+  display: block;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: justify;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 100px;
+}
+.largebox.blue {
+  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #141e2d);
+}
+.largebox.red {
+  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #571a0d);
+}
+
+.largebox.yellow {
+  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #d9a726);
+}
+
+.largebox.globalwarming {
+  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #141e2d);
+}
+.box.blue {
   background: linear-gradient(0.35turn, #141e2d, #0e0e0c, #141e2d);
 }
 
-.box.space {
+.box.red {
   background: linear-gradient(0.35turn, #0e0e0c, #571a0d, #0e0e0c);
 }
 
+.box.yellow {
+  background: linear-gradient(0.35turn, #0e0e0e, #0e0e0c, #d9a726);
+}
 /* News GRIDS */
 
 .newsimg {
@@ -232,7 +287,8 @@ button:hover {
 }
 
 .box.news {
-  background: linear-gradient(0.35turn, #f0f1f3, #d9a726, #f0f1f3);
+  background: linear-gradient(0.35turn, #bdbdbd, #d9a726, #bdbdbd);
+  color: #0e0e0c;
 }
 /* VISIT-PAGE */
 
@@ -354,14 +410,14 @@ a {
     justify-items: center;
     align-items: center;
   }
-  .indexpicture {
+  .indeximg {
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 20px;
   }
 
-  .mainpicture {
+  .indeximg.main {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
@@ -377,7 +433,7 @@ a {
     border-radius: 20px;
   }
 
-  .mainpicture.moon {
+  .indeximg.moon {
     display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
