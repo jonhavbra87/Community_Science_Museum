@@ -10,7 +10,9 @@ body {
 /* GLOBAL STYLE */
 
 /* Headlines */
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -18,16 +20,11 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
   font-size: 1.5rem;
 }
 
 h3 {
-  font-weight: bold;
   font-size: 1.2rem;
-  text-align: center;
 }
 /* Text styling */
 .uppercase {
@@ -112,6 +109,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-self: center;
   text-align: center;
   margin: 0 auto;
   gap: 20px;
@@ -158,14 +156,8 @@ nav a {
   border-radius: 20px;
 }
 /* BOOKING PAGE */
-.booking-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  /*   justify-content: center; */
-  align-items: center;
+.global-container.booking {
   text-align: left;
-  margin: 0 auto;
   background-color: #214a2a;
   border-radius: 20px;
   width: 100%;
@@ -199,7 +191,6 @@ input[type="date"],
 input[id="comments"],
 textarea {
   border: 2px solid #0e0e0c;
-  /* border-radius: 20px; */
   font-size: 1rem;
   width: 90%;
 }
@@ -246,9 +237,9 @@ select::after {
 .largebox {
   display: block;
   justify-items: center;
+  text-align: justify;
   margin: 0 auto;
   padding: 5px;
-  text-align: justify;
   border-radius: 20px;
   width: 100%;
   max-width: 1050px;
@@ -281,7 +272,7 @@ select::after {
 .newsimg {
   align-items: center;
   object-fit: cover;
-  min-width: 300px;
+  min-width: 200px;
 }
 .newsimg img {
   width: 100%;
@@ -292,11 +283,10 @@ select::after {
 .newstext {
   border-radius: 20px;
   max-width: 550px;
-  max-height: 550px;
-  padding-left: 20px;
-  padding-right: 10px;
   text-align: left;
   justify-items: center;
+  text-justify: inter-word;
+  font-weight: lighter;
 }
 .newstext.red {
   background-color: #571a0d;
