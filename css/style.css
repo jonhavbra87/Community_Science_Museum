@@ -192,17 +192,19 @@ textarea {
 button {
   border: none;
   border-radius: 10px;
-  padding: 5px;
+  padding: 20px;
   margin-top: 20px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.3s ease;
-  background-color: #f0f1f3;
+  background-color: #0e0e0c;
+  color: #f0f1f3;
   width: 100%;
 }
 
 button:hover {
-  background-color: #a9b7ac;
+  background-color: #f0f1f3;
+  color: #0e0e0c;
 }
 
 select {
