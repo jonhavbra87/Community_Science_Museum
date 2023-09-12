@@ -209,9 +209,6 @@ button:hover {
 }
 
 select {
-  appearance: none; /* Remove default appearance */
-  -webkit-appearance: none; /* For older versions of Safari */
-  -moz-appearance: none; /* For older versions of Firefox */
   padding: 10px;
   border: 1px solid #0e0e0c;
   border-radius: 4px;
@@ -239,6 +236,7 @@ select::after {
   text-align: justify;
   border-radius: 20px;
   width: 100%;
+  max-width: 1050px;
   min-height: 100px;
 }
 .largebox.blue {
