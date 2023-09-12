@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 h2 {
@@ -33,6 +33,10 @@ h3 {
 .uppercase {
   text-transform: uppercase;
 }
+p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 /* Header design */
 .header {
@@ -43,25 +47,31 @@ h3 {
   align-items: center;
   width: 100%;
   height: 100px;
-  background-color: #0e0e0c;
+  background: #0e0e0c;
+  color: #f0f1f3;
 }
 
 header img {
   max-width: 70px;
+  border-radius: 10px;
 }
 
 .search {
+  display: none;
+  background: #f0f1f3;
   border-radius: 20px;
   padding: 8px;
   width: 100px;
-  height: 30px;
+}
+
+.hamburger-icon {
+  transform: scale(1.8);
 }
 
 .hidden-text {
   display: none;
 }
 
-/* Hamburger menu */
 nav,
 #menu-checkbox {
   display: none;
@@ -74,23 +84,28 @@ nav,
 }
 
 nav {
-  background-color: #0e0e0c;
+  background: #0e0e0c;
   position: absolute;
   bottom: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 64px;
 }
 
 nav a:hover {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 nav a {
   display: block;
   text-decoration: solid;
   text-align: center;
-  color: #f0f1f3;
+  color: #f6fbf4;
   padding: 0.7em;
   font-size: 1.2rem;
+}
+
+.current {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .global-container {
@@ -147,7 +162,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  /*   justify-content: center; */
   align-items: center;
   text-align: left;
   margin: 0 auto;
@@ -155,7 +170,7 @@ nav a {
   border-radius: 20px;
   width: 100%;
   max-width: 550px;
-  overflow: hidden; /* Add this property */
+  overflow: hidden;
 }
 
 .visit.booking {
@@ -164,7 +179,7 @@ nav a {
   background-color: #a9b7ac;
   color: #0e0e0c;
   width: 90%;
-  margin: 20px;
+  margin-top: 20px;
 }
 .input-container {
   display: block;
@@ -277,7 +292,11 @@ select::after {
 .newstext {
   border-radius: 20px;
   max-width: 550px;
-  margin: 10px;
+  max-height: 550px;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: left;
+  justify-items: center;
 }
 .newstext.red {
   background-color: #571a0d;
@@ -310,19 +329,24 @@ select::after {
 .visit {
   border-radius: 20px;
   width: 90%;
-  margin: 0 auto; /* Center the container horizontally */
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  /*   margin: 0 auto; /* Center the container horizontally */
 }
 .visit.img > img {
   max-width: 100%;
   border-radius: 20px;
 }
 .visit.adress {
-  justify-self: center;
   align-self: center;
+  text-align: center;
   text-transform: uppercase;
   color: #f0f1f3;
+  border-style: dashed;
 }
 .visit.openinghours {
+  text-align: center;
   background-color: #d9a726;
   color: #0e0e0c;
   text-transform: capitalize;
@@ -386,8 +410,10 @@ a {
     height: 100px;
   }
 
+  /* Navigation design desktop */
   nav {
     display: flex;
+    flex-direction: row;
     position: static;
     justify-content: center;
     text-align: center;
@@ -405,16 +431,16 @@ a {
   .current {
     text-decoration: underline;
   }
-
-  .logo {
-    display: block;
-  }
-
   .search {
+    display: block;
     border-radius: 20px;
     padding: 8px;
     width: 200px;
     margin: 20px;
+  }
+
+  .fa-magnifying-glass {
+    display: none;
   }
 
   /* INDEX PAGE */
