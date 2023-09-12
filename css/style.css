@@ -148,12 +148,14 @@ nav a {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  text-align: left;
   margin: 0 auto;
   background-color: #214a2a;
   border-radius: 20px;
-  padding: 20px;
   width: 100%;
+  max-width: 550px;
+  overflow: hidden; /* Add this property */
 }
 
 .visit.booking {
@@ -161,11 +163,17 @@ nav a {
   border: 2px solid #0e0e0c;
   background-color: #a9b7ac;
   color: #0e0e0c;
+  width: 90%;
+  margin: 20px;
 }
-
+.input-container {
+  display: block;
+  margin-bottom: 20px;
+  width: 80%;
+}
 .form__input {
   display: block;
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
 }
 
@@ -173,21 +181,24 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
+input[id="comments"],
 textarea {
-  width: 90%;
   border: 2px solid #0e0e0c;
   /* border-radius: 20px; */
   font-size: 1rem;
+  width: 90%;
 }
 
 button {
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 5px;
   margin-top: 20px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.3s ease;
+  background-color: #f0f1f3;
+  width: 100%;
 }
 
 button:hover {
@@ -196,6 +207,8 @@ button:hover {
 
 select {
   appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* For older versions of Safari */
+  -moz-appearance: none; /* For older versions of Firefox */
   padding: 10px;
   border: 1px solid #0e0e0c;
   border-radius: 4px;
