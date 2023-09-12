@@ -51,7 +51,7 @@ p {
   color: #f0f1f3;
 }
 
-header img {
+.logo {
   max-width: 70px;
   border-radius: 10px;
 }
@@ -87,7 +87,7 @@ nav {
   background: #0e0e0c;
   position: absolute;
   bottom: 0px;
-  margin-bottom: 64px;
+  margin-bottom: 100px;
 }
 
 nav a:hover {
@@ -424,6 +424,10 @@ a {
     display: none;
   }
 
+  .fa-magnifying-glass {
+    display: none;
+  }
+
   nav a {
     display: inline-block;
   }
@@ -431,16 +435,13 @@ a {
   .current {
     text-decoration: underline;
   }
+
   .search {
     display: block;
     border-radius: 20px;
     padding: 8px;
     width: 200px;
     margin: 20px;
-  }
-
-  .fa-magnifying-glass {
-    display: none;
   }
 
   /* INDEX PAGE */
