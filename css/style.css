@@ -4,8 +4,9 @@ body {
   background: #0e0e0c;
   color: #f0f1f3;
   min-height: 100vh;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  max-width: 1350px;
 }
 
 /* GLOBAL STYLE */
@@ -40,9 +41,10 @@ p {
 .header {
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-content: center;
   align-items: center;
   width: 100%;
   height: 70px;
@@ -59,11 +61,8 @@ p {
 
 .search {
   display: none;
-  background: #f0f1f3;
-  border-radius: 20px;
-  padding: 8px;
-  width: 100px;
 }
+
 .magnifying-icon,
 .hamburger-icon {
   transform: scale(1.8);
@@ -76,7 +75,6 @@ p {
 nav,
 #menu-checkbox {
   display: none;
-  align-self: right;
   width: 100%;
 }
 
@@ -308,13 +306,13 @@ select::after {
 }
 .newsimg img {
   width: 100%;
-  max-width: 550px;
+  max-width: 500px;
   border-radius: 20px;
 }
 
 .newstext {
   border-radius: 20px;
-  max-width: 550px;
+  max-width: 500px;
   text-align: left;
   justify-items: center;
   text-justify: inter-word;
@@ -428,49 +426,49 @@ a {
   }
 
   .header {
+    position: fixed;
     height: 100px;
     margin-left: 130px;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    align-items: start;
   }
 
   /* Navigation design desktop */
+
   nav {
-    display: block;
-    position: sticky;
-    top: 0;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    /* margin-right: 130px; */
-    /*     margin-bottom: 0px; */
+    display: flex;
+    flex-direction: row;
+    position: static;
+    margin-bottom: 0px;
   }
-  .magnifying-icon,
+
+  .search-icon,
   .hamburger-icon {
     display: none;
   }
 
   nav a {
     display: inline-block;
+    justify-content: center;
+    text-align: center;
   }
 
   .current {
     text-decoration: underline;
   }
   .logo {
-    justify-self: center;
-    align-items: center;
     align-self: center;
   }
   .search {
     display: block;
-    justify-content: center;
-    align-content: center;
     align-self: center;
     border-radius: 15px;
     padding: 7px;
     width: 200px;
     margin: 20px;
   }
+
   .tab-menu {
     display: none;
   }
