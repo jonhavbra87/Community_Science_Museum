@@ -4,6 +4,7 @@ body {
   background: #0e0e0c;
   color: #f0f1f3;
   min-height: 100vh;
+  margin-top: 20px;
   margin-bottom: 100px;
 }
 
@@ -39,7 +40,7 @@ p {
 .header {
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
