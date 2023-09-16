@@ -7,7 +7,6 @@ body {
   min-height: 100vh;
   /*   margin-top: 40px; */
   margin-bottom: 80px;
-  max-width: 1350px;
 }
 
 main {
@@ -407,15 +406,15 @@ a {
 }
 
 /* Desktop*/
-@media (min-width: 40em) {
+@media (min-width: 45em) {
   body {
     margin-bottom: 0px;
   }
   main {
-    margin-top: 0;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-top: 100px;
     margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
   h1 {
     font-size: 4rem;
@@ -427,7 +426,7 @@ a {
 
   header {
     top: 0px;
-    position: sticky;
+    position: fixed;
     height: 100px;
     justify-content: center;
     align-content: center;
@@ -439,9 +438,8 @@ a {
     display: flex;
     flex-direction: row;
     position: absolute;
-    /*     top: 0; */
     position: static;
-    justify-content: center;
+    justify-content: end;
     text-align: center;
     margin-top: 0px;
   }
@@ -464,7 +462,8 @@ a {
   }
   .header img {
     display: block;
-    justify-self: center;
+    justify-self: start;
+    margin-left: 70px;
   }
   .search {
     display: block;
