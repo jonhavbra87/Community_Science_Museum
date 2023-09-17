@@ -418,6 +418,18 @@ a {
     margin-left: 150px;
     margin-right: 150px;
   }
+
+  main.news {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
   h1 {
     font-size: 4rem;
   }
