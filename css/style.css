@@ -257,7 +257,6 @@ select:hover {
   background-color: #a9b7ac;
 }
 select::after {
-  content: "\25BC"; /* Unicode character for a downward arrow */
   position: absolute;
   top: 50%;
   right: 10px;
@@ -271,7 +270,7 @@ select::after {
   margin: 0 auto;
   padding: 5px;
   border-radius: 20px;
-  width: 100%;
+  width: 99%;
   max-width: 1050px;
   min-height: 100px;
 }
@@ -578,6 +577,13 @@ a {
   }
 
   /* EXHIBITION PAGE */
+  .indeximg.exhibitions {
+    display: block;
+    justify-self: center;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 
   /* VISIT PAGE*/
   .global-container.visit {
