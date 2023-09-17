@@ -275,14 +275,14 @@ select::after {
   min-height: 100px;
 }
 .largebox.blue {
-  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #141e2d);
+  background: linear-gradient(0.25turn, #0e0e0c, #0e0e0c, #141e2d);
 }
 .largebox.red {
-  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #571a0d);
+  background: linear-gradient(0.25turn, #0e0e0c, #0e0e0c, #571a0d);
 }
 
 .largebox.yellow {
-  background: linear-gradient(0.25turn, #0e0e0e, #0e0e0c, #d9a726);
+  background: linear-gradient(0.25turn, #0e0e0c, #0e0e0c, #d9a726);
 }
 
 .box.blue {
@@ -294,7 +294,7 @@ select::after {
 }
 
 .box.yellow {
-  background: linear-gradient(0.35turn, #0e0e0e, #0e0e0c, #d9a726);
+  background: linear-gradient(0.35turn, #0e0e0c, #0e0e0c, #d9a726);
 }
 /* NEWS PAGE */
 
@@ -582,7 +582,7 @@ a {
     justify-self: center;
     align-items: center;
     max-width: 1050px;
-    margin: 0 auto;
+    margin: 40px auto 0px auto;
   }
 
   /* VISIT PAGE*/
